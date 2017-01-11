@@ -1,0 +1,8 @@
+/* pages/video/video.wxss */
+.title-style{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10rpx;
+    /*border: 1px solid red;*/
+}
+

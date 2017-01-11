@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<scroll-view scroll-y="true" class="container" lower-threshold="5">
+  <block wx:for="{{json}}" wx:key="{{s}}">
+    <view id="tapTest" class="view-root-style" data-obj="{{item}}" bindtap="viewClick">
+    <!--left-->
+      <view class="view-style">
+        <view>
+          <image class="video-style" src="{{item.thumb}}"></image>
+        </view>
+        <view class="left-bottom-style">
+          <image class="ico-style" src="{{item.avatar}}"></image>
+          <view class="text-view-style">
+            <text class="text-style">{{item.nick}}</text>
+            <!--<text class="text-style">{{item.title}}</text>-->
+          </view>
+        </view>
+      </view>
+      <!--right-->
+      <view class="view-style">
+        <text class="text-right-style">{{item.category_name}}</text>
+        <text class="text-right-style">开始时间:{{item.start_time}}</text>
+        <text class="text-right-style">{{item.announcement}}</text>
+        <text class="text-right-style">{{item.view}}</text>
+        <!--<text class="text-right-style">{{item.intro}}</text>-->
+      </view>
+    </view>
+    <view class="line-style"></view>
+  </block>
+</scroll-view>

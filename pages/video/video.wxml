@@ -1,0 +1,8 @@
+            
+<!--pages/video/video.wxml-->
+<view>
+  <text class="title-style">{{rooms.nick}}</text>
+  <view class="title-style">
+    <video class="video-style" src="{{rooms.live.ws.hls[5].src}}"></video>
+  </view>
+</view>           
