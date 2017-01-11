@@ -4,6 +4,7 @@ var app = getApp()
 var page = 1;
 var pageNum = "list";
 var requestUrl = "http://www.quanmin.tv/json/play/" + pageNum + ".json";
+//获取的uid
 var uid = "";
 
 Page({
@@ -34,7 +35,7 @@ Page({
   },
 
   viewClick: function (e) {
-    //item click object
+    //item click uid
     console.log(e.currentTarget.dataset.obj.uid);
     uid = e.currentTarget.dataset.obj.uid;
 
