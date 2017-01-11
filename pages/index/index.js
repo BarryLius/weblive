@@ -5,8 +5,6 @@ var page = 1;
 var pageNum = "list";
 var requestUrl = "http://www.quanmin.tv/json/play/" + pageNum + ".json";
 var uid = "";
-var nick = "";
-var title = "";
 
 Page({
   data: {
@@ -39,11 +37,9 @@ Page({
     //item click object
     console.log(e.currentTarget.dataset.obj.uid);
     uid = e.currentTarget.dataset.obj.uid;
-    nick = e.currentTarget.dataset.obj.nick;
-    title = e.currentTarget.dataset.obj.title;
 
     wx.navigateTo({
-      url: '../video/video?uid=' + uid + '&nick=' + nick + '&title=' + title + '',
+      url: '../video/video?uid=' + uid + '',
       success: function (res) {
         // success
         console.log("res::");
